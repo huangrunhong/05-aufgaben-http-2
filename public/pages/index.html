@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gästebuch-Homepage</title>
+    <link rel="stylesheet" type="" href="/css/style.css" />
+  </head>
+  <body>
+    <nav><a href="/">Home</a> <a href="/pages/about.html">About Us</a></nav>
+    <div>
+      <h1>Gästebuch-Homepage</h1>
+      <p>
+        Welcome to our restaurant, we offer a wide variety of cuisine. After
+        your meal, you are welcome to leave us a message so that we can provide
+        you with better service in the future.
+      </p>
+      <img src="/images/restaurant.jpg" alt="restaurant" />
+    </div>
+
+    <h2>Messages</h2>
+
+    <form onsubmit="return false">
+      <input
+        class="inputField"
+        type="text"
+        id="name"
+        placeholder="please leave your name"
+      />
+      <input
+        class="inputField"
+        type="text"
+        id="message"
+        placeholder="please leave your message"
+      />
+      <input
+        class="button"
+        type="submit"
+        value="save"
+        onclick="saveNewMessage()"
+      />
+    </form>
+    <script src="/js/loadMessages.js"></script>
+  </body>
+</html>
